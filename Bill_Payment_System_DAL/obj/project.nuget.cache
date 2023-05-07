@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TEDPKA4Ge+o8mRnQ1J+1lxBDQ9fX8EBtCP1d2Qm5odl55sbHQcJvNyEy+f7axeihkQ/NTwJPObsARtnZYpLYxA==",
+  "dgSpecHash": "29n8xehoKRdHQfv4XRA35rmp35fuGbdmgyeWYX7P3yoTpA6c3tXcpYfI1ed7p55Qx+0ETdIpwTLYrV9HwFLVzQ==",
   "success": true,
   "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_System_DAL\\Bill_Payment_System_DAL.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

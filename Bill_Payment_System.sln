@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_System_API", "Bill_Payment_System_API\Bill_Payment_System_API.csproj", "{7C3E2B40-FF72-4B04-8398-27E1579C71C7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bills_Payment_Management_System", "Bills_Payment_Management_System", "{012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_System_DAL", "Bill_Payment_System_DAL\Bill_Payment_System_DAL.csproj", "{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_System_BLL", "Bill_Payment_System_BLL\Bill_Payment_System_BLL.csproj", "{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_System_Data", "Bill_Payment_System_DATA\Bill_Payment_System_Data.csproj", "{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_System_API", "Bill_Payment_System_API\Bill_Payment_System_API.csproj", "{16A9FD08-5B4E-4684-9795-FE2112530AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bill_Payment_Management_Migrations", "Bill_Payment_Management_Migrations\Bill_Payment_Management_Migrations.csproj", "{0A2E17C1-8891-4894-8BC9-D14330C8BDD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7C3E2B40-FF72-4B04-8398-27E1579C71C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C3E2B40-FF72-4B04-8398-27E1579C71C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C3E2B40-FF72-4B04-8398-27E1579C71C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C3E2B40-FF72-4B04-8398-27E1579C71C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A9FD08-5B4E-4684-9795-FE2112530AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A9FD08-5B4E-4684-9795-FE2112530AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A9FD08-5B4E-4684-9795-FE2112530AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A9FD08-5B4E-4684-9795-FE2112530AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2E17C1-8891-4894-8BC9-D14330C8BDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2E17C1-8891-4894-8BC9-D14330C8BDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2E17C1-8891-4894-8BC9-D14330C8BDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2E17C1-8891-4894-8BC9-D14330C8BDD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC08D8FF-6687-4C60-83D9-2F6853F3E6DF} = {012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}
+		{F8F50C2B-50D3-4FAF-8B1F-6463DC5DABAC} = {012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}
+		{A94FC533-5D6E-4E2B-9AB3-D791CE3E4DE4} = {012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}
+		{16A9FD08-5B4E-4684-9795-FE2112530AD5} = {012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}
+		{0A2E17C1-8891-4894-8BC9-D14330C8BDD2} = {012C41B3-EA07-4CD8-B2D4-F22AF5EC178B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1CFF1C7A-D69B-473A-9899-153AD44AAA63}
