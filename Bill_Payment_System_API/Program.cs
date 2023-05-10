@@ -1,4 +1,4 @@
-using Bill_Payment_System_Data.Context;
+using Bill_Payment_System_DAL.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

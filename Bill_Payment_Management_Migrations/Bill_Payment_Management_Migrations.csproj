@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bill_Payment_System_DATA\Bill_Payment_System_Data.csproj" />
+    <ProjectReference Include="..\Bill_Payment_System_DAL\Bill_Payment_System_DAL.csproj" />
   </ItemGroup>
 
 </Project>

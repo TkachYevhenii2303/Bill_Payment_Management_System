@@ -1285,7 +1285,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Bill_Payment_System_Data": "1.0.0",
+          "Bill_Payment_System_DAL": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
@@ -1300,28 +1300,15 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "FluentValidation.AspNetCore": "11.3.0"
-        },
-        "compile": {
-          "bin/placeholder/Bill_Payment_System_DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Bill_Payment_System_DAL.dll": {}
-        }
-      },
-      "Bill_Payment_System_Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Bill_Payment_System_DAL": "1.0.0",
+          "FluentValidation.AspNetCore": "11.3.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
         },
         "compile": {
-          "bin/placeholder/Bill_Payment_System_Data.dll": {}
+          "bin/placeholder/Bill_Payment_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Bill_Payment_System_Data.dll": {}
+          "bin/placeholder/Bill_Payment_System_DAL.dll": {}
         }
       }
     }
@@ -3837,17 +3824,12 @@
       "type": "project",
       "path": "../Bill_Payment_System_DAL/Bill_Payment_System_DAL.csproj",
       "msbuildProject": "../Bill_Payment_System_DAL/Bill_Payment_System_DAL.csproj"
-    },
-    "Bill_Payment_System_Data/1.0.0": {
-      "type": "project",
-      "path": "../Bill_Payment_System_DATA/Bill_Payment_System_Data.csproj",
-      "msbuildProject": "../Bill_Payment_System_DATA/Bill_Payment_System_Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Bill_Payment_Management_Migrations >= 1.0.0",
-      "Bill_Payment_System_Data >= 1.0.0",
+      "Bill_Payment_System_DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
@@ -3884,8 +3866,8 @@
             "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_Management_Migrations\\Bill_Payment_Management_Migrations.csproj": {
               "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_Management_Migrations\\Bill_Payment_Management_Migrations.csproj"
             },
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_System_DATA\\Bill_Payment_System_Data.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_System_DATA\\Bill_Payment_System_Data.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_System_DAL\\Bill_Payment_System_DAL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Bill_Payment_System\\Bill_Payment_System_DAL\\Bill_Payment_System_DAL.csproj"
             }
           }
         }
