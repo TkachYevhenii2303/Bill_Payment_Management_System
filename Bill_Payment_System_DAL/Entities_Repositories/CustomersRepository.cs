@@ -1,11 +1,13 @@
 ﻿using Bill_Payment_System_DAL.Context;
 using Bill_Payment_System_DAL.Entities;
 using Bill_Payment_System_DAL.Entities_Repositories.Interfaces;
+using Bill_Payment_System_DAL.Fluent_Validations;
 using Bill_Payment_System_DAL.Generic_Repository_Pattern;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 

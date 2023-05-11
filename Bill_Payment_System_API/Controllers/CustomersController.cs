@@ -96,5 +96,21 @@ namespace Bill_Payment_System_API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, exception.Message);
             }
         }
+
+        [HttpGet, Route("Get_the_Customers_with_all_Informations_ID")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<GetCustomerWithAllInformation>> GetCustomerWithAllInformationByIdAsync(Guid ID)
+        {
+            try
+            {
+                var result = await _CustomerServices.GetCustomerWithAllInformationByIdAsync(ID);
+                return Ok(result);
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, exception.Message);
+            }
+        }
     }
 }

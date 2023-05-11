@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DTO.Data_transfer_objects.Request_Result_DTO
 {
-    public class UpdateCustomersDTO : BaseEntityDTO<UpdateCustomersDTO, Customers>, IBaseEntityDTO
+    public class UpdateCustomersDTO : BaseEntityDTO<Customers, UpdateCustomersDTO>, IBaseEntityDTO
     {
         public Guid ID { get; set; }
 

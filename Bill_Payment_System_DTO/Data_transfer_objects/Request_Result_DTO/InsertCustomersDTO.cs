@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DTO.Data_transfer_objects.Request_Result_DTO
 {
-    public class InsertCustomersDTO : BaseEntityDTO<InsertCustomersDTO, Customers>
+    public class InsertCustomersDTO : BaseEntityDTO<Customers, InsertCustomersDTO>
     {
         public string Name { get; set; } = string.Empty;
 

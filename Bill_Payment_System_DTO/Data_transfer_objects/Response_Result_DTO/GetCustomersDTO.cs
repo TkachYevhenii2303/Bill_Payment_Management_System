@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DTO.Data_transfer_objects.Response_Result_DTO
 {
-    public class GetCustomersDTO : BaseEntityDTO<GetCustomersDTO, Customers>
+    public class GetCustomersDTO : BaseEntityDTO<Customers, GetCustomersDTO>
     {
         [JsonPropertyName("Customer's ID: ")]
         public Guid ID { get; set; }
