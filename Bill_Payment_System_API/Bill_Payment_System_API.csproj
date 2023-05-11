@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -17,12 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Bill_Payment_Management_Migrations\Bill_Payment_Management_Migrations.csproj" />
+    <ProjectReference Include="..\Bill_Payment_System_BLL\Bill_Payment_System_BLL.csproj" />
     <ProjectReference Include="..\Bill_Payment_System_DAL\Bill_Payment_System_DAL.csproj" />
+    <ProjectReference Include="..\Bill_Payment_System_DTO\Bill_Payment_System_DTO.csproj" />
   </ItemGroup>
 
 </Project>

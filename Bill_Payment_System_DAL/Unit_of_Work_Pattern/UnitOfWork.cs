@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DAL.Unit_of_Work_Pattern
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly BillPaymentContext _context;
 
@@ -18,10 +18,12 @@ namespace Bill_Payment_System_DAL.Unit_of_Work_Pattern
         {
             _context = context;
 
-            _CustomersRepository = new CustomersRepository(_context);
+            CustomersRepository = new CustomersRepository(_context);
         }
 
-        public ICustomersRepository _CustomersRepository { get; set; }
+        public ICustomersRepository CustomersRepository { get; set; }
+
+        public int Complete() => _context.SaveChanges();
 
         public async void Dispose() => await _context.DisposeAsync();
     }

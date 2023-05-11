@@ -14,10 +14,7 @@ namespace Bill_Payment_System_DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<BankAccounts> builder)
         {
-            builder
-                .HasOne<PaymentMethods>(x => x.PaymentMethods)
-                .WithOne(x => x.BankAccounts)
-                .HasForeignKey<PaymentMethods>(x => x.BankAccountId);
+          
         }
     }
 }

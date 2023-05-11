@@ -17,7 +17,7 @@ namespace Bill_Payment_System_DAL.Fluent_Validations
 
         public BankAccounts BankAccounts { get; set; } = null!;
 
-        public Guid BankAccountId { get; set; }
+        public Guid BankAccountsId { get; set; }
 
         public CreditCards CreditCards { get; set; } = null!;
 

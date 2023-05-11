@@ -15,6 +15,6 @@ namespace Bill_Payment_System_DAL.Entities
 
         public bool MoneyOwned { get; set; } = false;
 
-        public PaymentMethods PaymentMethods { get; set; } = null!;
+        public PaymentMethods? PaymentMethods { get; set; }
     }
 }

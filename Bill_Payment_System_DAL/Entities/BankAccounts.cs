@@ -11,10 +11,10 @@ namespace Bill_Payment_System_DAL.Entities
     {
         public string BankTitle { get; set; } = string.Empty;
 
-        public string Balance { get; set; } = string.Empty;
+        public decimal Balance { get; set; }
 
         public string SwithCode { get; set; } = string.Empty;
 
-        public PaymentMethods PaymentMethods { get; set; } = null!;
+        public PaymentMethods? PaymentMethods { get; set; }
     }
 }

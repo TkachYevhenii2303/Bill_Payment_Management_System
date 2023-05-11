@@ -3,8 +3,6 @@ D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_Management_Migrations.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_Management_Migrations.pdb
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_System_DAL.dll
-D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_System_Data.dll
-D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_System_Data.pdb
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\bin\Debug\net6.0\Bill_Payment_System_DAL.pdb
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\obj\Debug\net6.0\Bill_Payment_Management_Migrations.csproj.AssemblyReference.cache
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Bill_Payment_System\Bill_Payment_Management_Migrations\obj\Debug\net6.0\Bill_Payment_Management_Migrations.GeneratedMSBuildEditorConfig.editorconfig

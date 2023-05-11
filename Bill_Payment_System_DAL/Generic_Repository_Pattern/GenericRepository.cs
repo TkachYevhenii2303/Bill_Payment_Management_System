@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DAL.Generic_Repository_Pattern
 {
-    internal class GenericRepository<TEntity> : IGenericRepository<TEntity>
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : BaseEntity
     {
         private readonly BillPaymentContext _context;
@@ -46,7 +46,7 @@ namespace Bill_Payment_System_DAL.Generic_Repository_Pattern
             return await _context.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(x => x.ID == ID);
         }
 
-        public async Task<IEnumerable<TEntity>> InsertEntityAsycn(TEntity entity)
+        public async Task<IEnumerable<TEntity>> InsertEntityAsync(TEntity entity)
         {
             entity.CreatedDateTime = DateTime.Now;
             

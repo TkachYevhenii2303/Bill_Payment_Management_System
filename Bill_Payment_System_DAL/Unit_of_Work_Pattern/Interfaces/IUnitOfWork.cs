@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Bill_Payment_System_DAL.Unit_of_Work_Pattern.Interfaces
 {
-    internal interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
-        public ICustomersRepository _CustomersRepository { get; }
+        public ICustomersRepository CustomersRepository { get; }
+
+        public int Complete();
     }
 }

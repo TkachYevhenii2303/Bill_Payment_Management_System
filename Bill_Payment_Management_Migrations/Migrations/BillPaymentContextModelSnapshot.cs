@@ -28,9 +28,8 @@ namespace Bill_Payment_Management_Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Balance")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("BankTitle")
                         .IsRequired()
@@ -49,6 +48,408 @@ namespace Bill_Payment_Management_Migrations.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("BankAccounts");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = new Guid("fb58d6ce-de1b-4b94-af6f-770f2f5f2bf0"),
+                            Balance = 330.68m,
+                            BankTitle = "Schultz - Hansen",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 42, DateTimeKind.Local).AddTicks(8981),
+                            SwithCode = "461"
+                        },
+                        new
+                        {
+                            ID = new Guid("34ef67ca-31bc-4660-bca6-b98cc82f2aa0"),
+                            Balance = 182.19m,
+                            BankTitle = "Feest - Mohr",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 42, DateTimeKind.Local).AddTicks(9828),
+                            SwithCode = "124"
+                        },
+                        new
+                        {
+                            ID = new Guid("ccc929ea-deae-44e1-9e93-927354fece90"),
+                            Balance = 857.58m,
+                            BankTitle = "Sawayn, Von and Satterfield",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4),
+                            SwithCode = "222"
+                        },
+                        new
+                        {
+                            ID = new Guid("d0957b41-c3f3-4ab3-a673-37d7e42103ab"),
+                            Balance = 792.38m,
+                            BankTitle = "Gorczany, Kuhn and Prosacco",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(191),
+                            SwithCode = "572"
+                        },
+                        new
+                        {
+                            ID = new Guid("10028310-9315-4cf8-a40c-da97f9452e82"),
+                            Balance = 581.71m,
+                            BankTitle = "Wiegand - Runte",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(344),
+                            SwithCode = "719"
+                        },
+                        new
+                        {
+                            ID = new Guid("8ecf635a-afee-41c7-807e-0cc63b2f8910"),
+                            Balance = 874.80m,
+                            BankTitle = "Schuppe, Effertz and Lehner",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(483),
+                            SwithCode = "183"
+                        },
+                        new
+                        {
+                            ID = new Guid("7f3a2b4f-5b38-4477-a896-c0114a7f76bf"),
+                            Balance = 460.85m,
+                            BankTitle = "Mills - Tremblay",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(665),
+                            SwithCode = "773"
+                        },
+                        new
+                        {
+                            ID = new Guid("c107a52a-87fc-4288-936c-6b3c35ccec3d"),
+                            Balance = 91.79m,
+                            BankTitle = "Muller, Jaskolski and Littel",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(778),
+                            SwithCode = "511"
+                        },
+                        new
+                        {
+                            ID = new Guid("559a9d3f-f784-4a52-9f5c-ee65321f99f1"),
+                            Balance = 627.80m,
+                            BankTitle = "Lebsack Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(958),
+                            SwithCode = "936"
+                        },
+                        new
+                        {
+                            ID = new Guid("60ed2325-d53d-4209-8bb5-0ec780ac4015"),
+                            Balance = 969.73m,
+                            BankTitle = "Turcotte, Rippin and Rau",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1148),
+                            SwithCode = "265"
+                        },
+                        new
+                        {
+                            ID = new Guid("a3fc4852-77ee-4c02-9282-e8454007af4e"),
+                            Balance = 744.19m,
+                            BankTitle = "Rowe and Sons",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1299),
+                            SwithCode = "260"
+                        },
+                        new
+                        {
+                            ID = new Guid("e1afd01e-b09c-49fa-8851-50a7142ae31e"),
+                            Balance = 644.08m,
+                            BankTitle = "Dickens, Mosciski and Mraz",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1444),
+                            SwithCode = "771"
+                        },
+                        new
+                        {
+                            ID = new Guid("0c5a707c-800d-4a5d-b718-307ca094804b"),
+                            Balance = 694.36m,
+                            BankTitle = "Mills - Schaden",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1646),
+                            SwithCode = "738"
+                        },
+                        new
+                        {
+                            ID = new Guid("ae496530-6dea-4890-98b9-b23858bc9847"),
+                            Balance = 131.15m,
+                            BankTitle = "Farrell, Yundt and Harris",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1750),
+                            SwithCode = "603"
+                        },
+                        new
+                        {
+                            ID = new Guid("47837055-95c6-4123-b2cf-024f29365fb6"),
+                            Balance = 924.89m,
+                            BankTitle = "Mills LLC",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(1926),
+                            SwithCode = "591"
+                        },
+                        new
+                        {
+                            ID = new Guid("a4962071-9195-4411-ba06-c24f0d9ea0fd"),
+                            Balance = 523.84m,
+                            BankTitle = "Schaefer Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2035),
+                            SwithCode = "473"
+                        },
+                        new
+                        {
+                            ID = new Guid("6d9dcd2e-cb8c-4a42-a0a5-4e7225995cd1"),
+                            Balance = 482.42m,
+                            BankTitle = "Kiehn Inc",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2288),
+                            SwithCode = "744"
+                        },
+                        new
+                        {
+                            ID = new Guid("3c6b89f0-aeb3-48fa-91b2-d6a0166728de"),
+                            Balance = 439.07m,
+                            BankTitle = "Moen Inc",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2396),
+                            SwithCode = "811"
+                        },
+                        new
+                        {
+                            ID = new Guid("ca1cdef6-280d-4336-ac27-3e7d3a1f7519"),
+                            Balance = 976.66m,
+                            BankTitle = "Hansen and Sons",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2531),
+                            SwithCode = "511"
+                        },
+                        new
+                        {
+                            ID = new Guid("c97e6f4a-8577-42a1-9429-0cd874d90347"),
+                            Balance = 116.85m,
+                            BankTitle = "Doyle Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2697),
+                            SwithCode = "868"
+                        },
+                        new
+                        {
+                            ID = new Guid("5ff0b966-b1de-4924-a3cc-1c4babb1e6fc"),
+                            Balance = 523.73m,
+                            BankTitle = "Lehner - Lind",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2840),
+                            SwithCode = "339"
+                        },
+                        new
+                        {
+                            ID = new Guid("2a38d95c-2890-41e8-9c40-b694d52c1e25"),
+                            Balance = 968.40m,
+                            BankTitle = "Rice, Reichert and Auer",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(2980),
+                            SwithCode = "129"
+                        },
+                        new
+                        {
+                            ID = new Guid("d0b37139-06e9-4311-a7cc-361394d2e1c3"),
+                            Balance = 826.32m,
+                            BankTitle = "Bode, Beatty and Cummings",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3124),
+                            SwithCode = "089"
+                        },
+                        new
+                        {
+                            ID = new Guid("9c0c018a-ee7b-4265-a4f3-9e13212cc3df"),
+                            Balance = 308.44m,
+                            BankTitle = "Kiehn Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3307),
+                            SwithCode = "307"
+                        },
+                        new
+                        {
+                            ID = new Guid("2631a0bb-a502-45ec-ab65-d7a7e733342a"),
+                            Balance = 744.23m,
+                            BankTitle = "Walsh Inc",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3450),
+                            SwithCode = "899"
+                        },
+                        new
+                        {
+                            ID = new Guid("7e5f3541-f074-458a-9570-92d2eb9ee1d2"),
+                            Balance = 210.39m,
+                            BankTitle = "Collier LLC",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3554),
+                            SwithCode = "705"
+                        },
+                        new
+                        {
+                            ID = new Guid("05c130d0-696e-4e29-a43a-0b59874cbc45"),
+                            Balance = 611.34m,
+                            BankTitle = "Kemmer and Sons",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3732),
+                            SwithCode = "360"
+                        },
+                        new
+                        {
+                            ID = new Guid("e68a042c-566a-4272-bf72-7f5ba7956600"),
+                            Balance = 350.05m,
+                            BankTitle = "Marks LLC",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3836),
+                            SwithCode = "970"
+                        },
+                        new
+                        {
+                            ID = new Guid("058286f1-0323-4b7d-81fc-768e804697f3"),
+                            Balance = 114.50m,
+                            BankTitle = "Marvin Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(3972),
+                            SwithCode = "012"
+                        },
+                        new
+                        {
+                            ID = new Guid("75f225e3-5164-4385-b89c-cc91b8b86e17"),
+                            Balance = 988.14m,
+                            BankTitle = "Beier - Hoeger",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4075),
+                            SwithCode = "202"
+                        },
+                        new
+                        {
+                            ID = new Guid("c79e6a74-6378-41a0-80cd-ab1dc6bb1863"),
+                            Balance = 451.40m,
+                            BankTitle = "Jenkins Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4211),
+                            SwithCode = "140"
+                        },
+                        new
+                        {
+                            ID = new Guid("e4d17015-21cc-44b1-b1a5-ae0cfffa1e46"),
+                            Balance = 932.22m,
+                            BankTitle = "Koss and Sons",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4318),
+                            SwithCode = "606"
+                        },
+                        new
+                        {
+                            ID = new Guid("9bf798ee-af41-414b-923a-c424d44069d1"),
+                            Balance = 148.24m,
+                            BankTitle = "Hirthe, Bergnaum and Becker",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4492),
+                            SwithCode = "305"
+                        },
+                        new
+                        {
+                            ID = new Guid("66c7bef5-cafc-45d2-a071-0a60f12df003"),
+                            Balance = 241.23m,
+                            BankTitle = "Heidenreich and Sons",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4690),
+                            SwithCode = "406"
+                        },
+                        new
+                        {
+                            ID = new Guid("3788b397-6f56-49ed-ba41-9d86e6044f3a"),
+                            Balance = 595.15m,
+                            BankTitle = "Kris, Kilback and Considine",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4796),
+                            SwithCode = "901"
+                        },
+                        new
+                        {
+                            ID = new Guid("863f3e06-84a0-44c0-b7dd-0c3cebc6a4e2"),
+                            Balance = 640.70m,
+                            BankTitle = "Oberbrunner - Orn",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(4979),
+                            SwithCode = "113"
+                        },
+                        new
+                        {
+                            ID = new Guid("bf002f3e-db7d-45a5-9506-d1d969efb5ea"),
+                            Balance = 895.80m,
+                            BankTitle = "Bechtelar, Friesen and Bartoletti",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5085),
+                            SwithCode = "053"
+                        },
+                        new
+                        {
+                            ID = new Guid("655cd521-5a6f-4e3c-92e6-34f7d5a36369"),
+                            Balance = 82.34m,
+                            BankTitle = "Mueller, Spencer and Roberts",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5266),
+                            SwithCode = "680"
+                        },
+                        new
+                        {
+                            ID = new Guid("c25b8910-5bfd-4a20-856d-5bc6d4418c32"),
+                            Balance = 872.12m,
+                            BankTitle = "Berge Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5445),
+                            SwithCode = "153"
+                        },
+                        new
+                        {
+                            ID = new Guid("a816f455-f011-4c17-9304-d4d50cb642f4"),
+                            Balance = 285.96m,
+                            BankTitle = "Brekke, Jerde and Herzog",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5551),
+                            SwithCode = "363"
+                        },
+                        new
+                        {
+                            ID = new Guid("90f0b1e0-2bdb-46b7-8a59-de196ff1c90c"),
+                            Balance = 544.78m,
+                            BankTitle = "Kuphal Inc",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5734),
+                            SwithCode = "246"
+                        },
+                        new
+                        {
+                            ID = new Guid("ea211b90-13e1-4b4f-a2fa-d8b3b49a7011"),
+                            Balance = 67.76m,
+                            BankTitle = "Kirlin Group",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5869),
+                            SwithCode = "487"
+                        },
+                        new
+                        {
+                            ID = new Guid("f5cf0326-9cf2-462f-b8e8-71406145e4d7"),
+                            Balance = 429.75m,
+                            BankTitle = "Roberts LLC",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(5971),
+                            SwithCode = "012"
+                        },
+                        new
+                        {
+                            ID = new Guid("698cd106-c76c-4722-a245-4181d07013ba"),
+                            Balance = 702.96m,
+                            BankTitle = "Jerde - Mueller",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6104),
+                            SwithCode = "608"
+                        },
+                        new
+                        {
+                            ID = new Guid("172a9dae-446a-4adc-a608-5a3716514bf9"),
+                            Balance = 33.70m,
+                            BankTitle = "Christiansen - Hirthe",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6206),
+                            SwithCode = "256"
+                        },
+                        new
+                        {
+                            ID = new Guid("35b7b17f-19e5-4400-bf8a-bc3dae464db1"),
+                            Balance = 323.70m,
+                            BankTitle = "McLaughlin - Brakus",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6355),
+                            SwithCode = "447"
+                        },
+                        new
+                        {
+                            ID = new Guid("55f4d148-a232-4e1e-a652-9c6fa0af824d"),
+                            Balance = 854.39m,
+                            BankTitle = "Buckridge Inc",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6458),
+                            SwithCode = "465"
+                        },
+                        new
+                        {
+                            ID = new Guid("8d4349fa-a4c9-4a82-92bc-361d2726167c"),
+                            Balance = 214.71m,
+                            BankTitle = "Runolfsdottir - Vandervort",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6596),
+                            SwithCode = "529"
+                        },
+                        new
+                        {
+                            ID = new Guid("d807cfc9-9852-4d38-b291-4c09727a341d"),
+                            Balance = 504.51m,
+                            BankTitle = "Skiles, Morar and Pfeffer",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6700),
+                            SwithCode = "827"
+                        },
+                        new
+                        {
+                            ID = new Guid("16bfba5d-8d48-47d4-8a21-a911000f515d"),
+                            Balance = 207.88m,
+                            BankTitle = "Terry, Boyer and Spencer",
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 43, DateTimeKind.Local).AddTicks(6877),
+                            SwithCode = "891"
+                        });
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Entities.CreditCards", b =>
@@ -75,6 +476,408 @@ namespace Bill_Payment_Management_Migrations.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("CreditCards");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = new Guid("9170c036-eec3-4455-b2fc-2b7faed00085"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(1717),
+                            ExpirationDate = new DateTime(2024, 2, 10, 2, 39, 24, 613, DateTimeKind.Local).AddTicks(3219),
+                            Limit = 840.50m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("b53b5df8-78f0-437d-8da7-b6ae1a1e01b3"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2404),
+                            ExpirationDate = new DateTime(2023, 8, 17, 14, 26, 57, 352, DateTimeKind.Local).AddTicks(5250),
+                            Limit = 118.94m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("7a8f6a9e-8ee5-4f39-9c1f-51e937cf5ad4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2423),
+                            ExpirationDate = new DateTime(2023, 12, 10, 5, 56, 53, 997, DateTimeKind.Local).AddTicks(9600),
+                            Limit = 916.51m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("8d9965a7-60f8-4ee2-8477-4baff6af4f67"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2436),
+                            ExpirationDate = new DateTime(2023, 8, 1, 19, 59, 47, 605, DateTimeKind.Local).AddTicks(3209),
+                            Limit = 857.80m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("18c24add-c346-4146-929b-bf50093aa68d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2448),
+                            ExpirationDate = new DateTime(2024, 3, 9, 21, 48, 54, 48, DateTimeKind.Local).AddTicks(6365),
+                            Limit = 418.67m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("2577e2dc-1019-456d-a988-c2667cf33897"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2468),
+                            ExpirationDate = new DateTime(2023, 10, 7, 7, 30, 47, 103, DateTimeKind.Local).AddTicks(2571),
+                            Limit = 778.49m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("25c164ac-1a02-43fe-9cf0-51b49d19ab73"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2481),
+                            ExpirationDate = new DateTime(2023, 6, 26, 8, 24, 51, 187, DateTimeKind.Local).AddTicks(2823),
+                            Limit = 477.51m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("5fda03b0-ed87-4143-a977-e1132ad68ae2"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2494),
+                            ExpirationDate = new DateTime(2023, 9, 21, 23, 12, 20, 590, DateTimeKind.Local).AddTicks(8833),
+                            Limit = 800.83m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("be2c5392-9746-48d2-aaae-0e2379df9959"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2507),
+                            ExpirationDate = new DateTime(2023, 5, 13, 22, 14, 25, 681, DateTimeKind.Local).AddTicks(5911),
+                            Limit = 136.51m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("708d5a36-c282-4ef8-a7b6-c093853b2a20"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2519),
+                            ExpirationDate = new DateTime(2023, 7, 30, 7, 55, 17, 709, DateTimeKind.Local).AddTicks(2177),
+                            Limit = 486.75m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("aea72de0-69c7-4e9b-85d2-a267e886a38f"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2531),
+                            ExpirationDate = new DateTime(2023, 5, 28, 15, 41, 5, 672, DateTimeKind.Local).AddTicks(5454),
+                            Limit = 175.65m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("27a8fedd-01d0-4d15-bb4d-6c778f034e0e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2544),
+                            ExpirationDate = new DateTime(2023, 11, 22, 12, 49, 9, 33, DateTimeKind.Local).AddTicks(2430),
+                            Limit = 629.26m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("c104a6c9-7861-4877-9b8e-451336c8e314"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2557),
+                            ExpirationDate = new DateTime(2023, 5, 25, 22, 48, 18, 774, DateTimeKind.Local).AddTicks(6131),
+                            Limit = 342.98m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("7689c824-7f87-4be7-a05b-6b33787d8389"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2571),
+                            ExpirationDate = new DateTime(2023, 7, 3, 11, 33, 19, 11, DateTimeKind.Local).AddTicks(9403),
+                            Limit = 107.84m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("2a47b215-8198-42b6-b085-072336c2f407"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2584),
+                            ExpirationDate = new DateTime(2024, 4, 29, 3, 13, 22, 349, DateTimeKind.Local).AddTicks(4987),
+                            Limit = 941.83m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("26a8fb2a-9f8c-433f-af73-b5af325974c8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2597),
+                            ExpirationDate = new DateTime(2023, 9, 22, 12, 58, 47, 747, DateTimeKind.Local).AddTicks(7845),
+                            Limit = 340.19m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("d0a4fdf1-8d57-4f82-b1ec-4fb058a2337e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2609),
+                            ExpirationDate = new DateTime(2024, 4, 23, 9, 31, 59, 521, DateTimeKind.Local).AddTicks(1190),
+                            Limit = 287.68m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("9f34352f-32f0-4ddc-8351-04e05fada5ac"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2677),
+                            ExpirationDate = new DateTime(2024, 4, 1, 19, 36, 0, 124, DateTimeKind.Local).AddTicks(1759),
+                            Limit = 113.77m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("8bce849c-5398-4730-807f-c893fea3c844"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2690),
+                            ExpirationDate = new DateTime(2023, 12, 28, 15, 56, 28, 852, DateTimeKind.Local).AddTicks(9249),
+                            Limit = 994.74m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("76e0e0c1-ff92-4350-a120-ee250ba9e3f0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2703),
+                            ExpirationDate = new DateTime(2023, 12, 13, 10, 49, 2, 962, DateTimeKind.Local).AddTicks(7336),
+                            Limit = 623.89m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("95c3c876-3155-4d67-a754-0a08c5fb2da8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2715),
+                            ExpirationDate = new DateTime(2023, 12, 26, 14, 5, 11, 416, DateTimeKind.Local).AddTicks(5143),
+                            Limit = 312.31m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("8c35ffbd-60bd-4e32-8343-502f7f6a891b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2729),
+                            ExpirationDate = new DateTime(2023, 10, 15, 13, 5, 39, 132, DateTimeKind.Local).AddTicks(647),
+                            Limit = 397.96m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("02ae29c4-51eb-4d97-ba5a-517f5847ce64"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2742),
+                            ExpirationDate = new DateTime(2023, 9, 17, 8, 53, 27, 107, DateTimeKind.Local).AddTicks(3668),
+                            Limit = 888.53m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("0c63bfc6-9546-4d7b-9ec4-e97c80cb3b8d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2755),
+                            ExpirationDate = new DateTime(2023, 10, 22, 12, 51, 49, 691, DateTimeKind.Local).AddTicks(6107),
+                            Limit = 308.06m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("8f94fec3-a3e1-42ad-8a52-182b90e85231"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2768),
+                            ExpirationDate = new DateTime(2023, 9, 16, 1, 58, 45, 768, DateTimeKind.Local).AddTicks(2392),
+                            Limit = 919.89m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("f32ec43b-0951-4a59-bc44-c679a3d7fe33"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2780),
+                            ExpirationDate = new DateTime(2023, 9, 29, 9, 40, 1, 225, DateTimeKind.Local).AddTicks(8855),
+                            Limit = 683.60m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("23790e45-94ae-49e7-8b15-5eae043967d0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2792),
+                            ExpirationDate = new DateTime(2024, 3, 5, 20, 35, 21, 249, DateTimeKind.Local).AddTicks(8071),
+                            Limit = 620.59m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("01c0ff7c-6450-4103-8a26-2221b7064475"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2805),
+                            ExpirationDate = new DateTime(2023, 7, 25, 12, 42, 46, 976, DateTimeKind.Local).AddTicks(1312),
+                            Limit = 431.79m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("b1d696e0-2d72-4d15-934e-a5d64e0cc5be"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2817),
+                            ExpirationDate = new DateTime(2024, 3, 23, 11, 56, 55, 738, DateTimeKind.Local).AddTicks(3424),
+                            Limit = 990.75m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("1d3490ca-7731-451c-8b7c-a5cf0eeb2b70"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2832),
+                            ExpirationDate = new DateTime(2023, 12, 24, 20, 22, 59, 21, DateTimeKind.Local).AddTicks(7987),
+                            Limit = 499.15m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("dd677cd0-2dee-4f46-8771-37109299c4c5"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2845),
+                            ExpirationDate = new DateTime(2023, 8, 31, 10, 37, 20, 178, DateTimeKind.Local).AddTicks(130),
+                            Limit = 826.49m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("73d61520-7175-4438-a6ca-31cdcce70d7d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2857),
+                            ExpirationDate = new DateTime(2023, 10, 31, 7, 27, 2, 224, DateTimeKind.Local).AddTicks(637),
+                            Limit = 855.74m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("faf697cb-f482-4b74-820e-9b5541539dae"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2870),
+                            ExpirationDate = new DateTime(2024, 4, 17, 4, 4, 1, 584, DateTimeKind.Local).AddTicks(295),
+                            Limit = 885.95m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("644a011f-c242-4762-a14e-7cef84e6e755"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2882),
+                            ExpirationDate = new DateTime(2023, 10, 21, 11, 3, 43, 187, DateTimeKind.Local).AddTicks(4218),
+                            Limit = 552.39m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("e6e9acb9-b7a1-4b63-8288-c849b75a653d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2972),
+                            ExpirationDate = new DateTime(2023, 6, 7, 21, 3, 2, 831, DateTimeKind.Local).AddTicks(4208),
+                            Limit = 301.69m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("5e7bf9a6-ba09-4d87-bb6a-1c6c7645ce7f"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2985),
+                            ExpirationDate = new DateTime(2024, 1, 8, 4, 58, 44, 637, DateTimeKind.Local).AddTicks(1171),
+                            Limit = 408.97m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("d9fd9836-6c29-43ce-a0b7-c2a760ae8132"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(2998),
+                            ExpirationDate = new DateTime(2024, 3, 7, 6, 53, 22, 263, DateTimeKind.Local).AddTicks(322),
+                            Limit = 369.59m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("e235f647-fd17-4b6b-a08b-e04a7a09b188"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3012),
+                            ExpirationDate = new DateTime(2023, 8, 23, 0, 37, 49, 437, DateTimeKind.Local).AddTicks(4806),
+                            Limit = 20.21m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("5a559d5c-942d-49d8-a2f4-a056e5396b8e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3025),
+                            ExpirationDate = new DateTime(2023, 10, 21, 22, 49, 44, 792, DateTimeKind.Local).AddTicks(6709),
+                            Limit = 586.98m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("50a1a9d1-667b-4c0a-a108-7686758da3d8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3038),
+                            ExpirationDate = new DateTime(2023, 6, 7, 2, 58, 9, 432, DateTimeKind.Local).AddTicks(8617),
+                            Limit = 675.58m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("ffca64e0-883a-4348-a8b0-82cc1cc54fcb"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3050),
+                            ExpirationDate = new DateTime(2023, 7, 30, 4, 48, 49, 608, DateTimeKind.Local).AddTicks(5247),
+                            Limit = 330.95m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("0d1f9c6e-d3cb-4e14-8d46-7cb217241467"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3063),
+                            ExpirationDate = new DateTime(2023, 12, 16, 4, 9, 46, 244, DateTimeKind.Local).AddTicks(835),
+                            Limit = 804.14m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("c3b40105-4b51-48c1-8881-9468f13f5792"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3075),
+                            ExpirationDate = new DateTime(2024, 3, 26, 23, 26, 12, 243, DateTimeKind.Local).AddTicks(2091),
+                            Limit = 339.23m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("ff21d401-13a7-44b3-8fa2-620644a770d1"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3087),
+                            ExpirationDate = new DateTime(2023, 7, 12, 6, 36, 40, 117, DateTimeKind.Local).AddTicks(2127),
+                            Limit = 929.10m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("053e6297-8484-473d-90d1-fec08ddb1c3c"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3100),
+                            ExpirationDate = new DateTime(2023, 12, 18, 18, 25, 41, 519, DateTimeKind.Local).AddTicks(9422),
+                            Limit = 751.13m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("c9f98697-8bda-415b-ade0-efd60f9e423c"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3114),
+                            ExpirationDate = new DateTime(2023, 9, 15, 2, 17, 53, 930, DateTimeKind.Local).AddTicks(870),
+                            Limit = 156.82m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("fb295fda-511a-4e60-b19c-d0fd2117c4b0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3126),
+                            ExpirationDate = new DateTime(2024, 2, 27, 3, 29, 27, 117, DateTimeKind.Local).AddTicks(5799),
+                            Limit = 838.17m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("c2b622de-18b6-49cb-9cdb-af6e17ffaecd"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3139),
+                            ExpirationDate = new DateTime(2024, 5, 4, 12, 31, 11, 170, DateTimeKind.Local).AddTicks(3546),
+                            Limit = 481.76m,
+                            MoneyOwned = true
+                        },
+                        new
+                        {
+                            ID = new Guid("a2c9d1c4-3fad-4282-a0c8-e0d81b81e50f"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3151),
+                            ExpirationDate = new DateTime(2024, 2, 18, 18, 54, 36, 72, DateTimeKind.Local).AddTicks(827),
+                            Limit = 810.69m,
+                            MoneyOwned = false
+                        },
+                        new
+                        {
+                            ID = new Guid("929d48ab-9b9d-4229-800e-2e42084c87f0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 46, DateTimeKind.Local).AddTicks(3164),
+                            ExpirationDate = new DateTime(2023, 9, 16, 4, 19, 22, 696, DateTimeKind.Local).AddTicks(2532),
+                            Limit = 275.54m,
+                            MoneyOwned = false
+                        });
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Entities.Customers", b =>
@@ -103,6 +906,808 @@ namespace Bill_Payment_Management_Migrations.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = new Guid("50fc8abc-d299-4024-94da-d7229e623669"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 30, DateTimeKind.Local).AddTicks(8816),
+                            Email = "DustinMohr9@gmail.com",
+                            Name = "Dustin Mohr",
+                            Password = "JZtWWEoCFz"
+                        },
+                        new
+                        {
+                            ID = new Guid("7e73cee1-2828-4a7a-83cc-167b8214a530"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(1321),
+                            Email = "CecilTurner_Johnston95@hotmail.com",
+                            Name = "Cecil Turner",
+                            Password = "750vfHhr7n"
+                        },
+                        new
+                        {
+                            ID = new Guid("5b5f8b7f-e86e-4633-9e8f-c960555c9a02"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(2778),
+                            Email = "ShaunKohler.Thompson29@gmail.com",
+                            Name = "Shaun Kohler",
+                            Password = "H9CBun38d3"
+                        },
+                        new
+                        {
+                            ID = new Guid("bc05ced6-1992-4c92-be2c-675fe596b4b9"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(3706),
+                            Email = "CaseyKub_Spencer61@yahoo.com",
+                            Name = "Casey Kub",
+                            Password = "648romHCf0"
+                        },
+                        new
+                        {
+                            ID = new Guid("0291b51b-98ba-46a1-8d5c-6f103cdb6e65"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(4500),
+                            Email = "NathanielBrekke_Lockman@gmail.com",
+                            Name = "Nathaniel Brekke",
+                            Password = "JPg36GydcW"
+                        },
+                        new
+                        {
+                            ID = new Guid("94693528-e169-431f-b435-44796efbb170"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(5389),
+                            Email = "LeslieHarber17@yahoo.com",
+                            Name = "Leslie Harber",
+                            Password = "X3I1VlHkAA"
+                        },
+                        new
+                        {
+                            ID = new Guid("0ee43f12-c6fc-4575-8a00-7413992fde6a"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(6269),
+                            Email = "MargaritaSchneider_Hansen@gmail.com",
+                            Name = "Margarita Schneider",
+                            Password = "sbYTg6znG6"
+                        },
+                        new
+                        {
+                            ID = new Guid("91ea5f7c-4b74-47d4-93a0-9cbf57b6bdfd"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(7238),
+                            Email = "OrlandoSchmitt96@hotmail.com",
+                            Name = "Orlando Schmitt",
+                            Password = "uyckAuKuzO"
+                        },
+                        new
+                        {
+                            ID = new Guid("c197c7cc-ccdf-473d-9245-65111b4e76b5"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(8117),
+                            Email = "ReginaldLueilwitz.Yundt@hotmail.com",
+                            Name = "Reginald Lueilwitz",
+                            Password = "qenlxr19BQ"
+                        },
+                        new
+                        {
+                            ID = new Guid("54f1a5d8-9b37-470a-889f-d8691a095ab5"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 31, DateTimeKind.Local).AddTicks(9347),
+                            Email = "DarrellMurazik1@gmail.com",
+                            Name = "Darrell Murazik",
+                            Password = "zj1TG4Kmcj"
+                        },
+                        new
+                        {
+                            ID = new Guid("88e899b9-4e55-45ef-859b-90a06d26017d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(851),
+                            Email = "OrlandoRunolfsson_Mayer@yahoo.com",
+                            Name = "Orlando Runolfsson",
+                            Password = "IgW0zvEKyR"
+                        },
+                        new
+                        {
+                            ID = new Guid("c3d499f4-6176-48ca-8aba-19069ca76c57"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(1899),
+                            Email = "EricGleichner14@hotmail.com",
+                            Name = "Eric Gleichner",
+                            Password = "nga2Inixgb"
+                        },
+                        new
+                        {
+                            ID = new Guid("2b243319-77dd-4557-bb18-adf96d098264"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(2833),
+                            Email = "KevinSchuster_Cole54@hotmail.com",
+                            Name = "Kevin Schuster",
+                            Password = "Mt823Qe6XL"
+                        },
+                        new
+                        {
+                            ID = new Guid("8c94f667-cd79-44e4-91ec-4f2bd3f43512"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(5071),
+                            Email = "CalebStrosin.Schuppe51@yahoo.com",
+                            Name = "Caleb Strosin",
+                            Password = "gA8YaNoa1v"
+                        },
+                        new
+                        {
+                            ID = new Guid("d1a41a10-0ea0-41f7-bdd6-2c59960d33c5"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(6167),
+                            Email = "JuneDach_Purdy@gmail.com",
+                            Name = "June Dach",
+                            Password = "u_zfAvlElu"
+                        },
+                        new
+                        {
+                            ID = new Guid("b138d6fe-1dcd-421d-9ea3-eba431140c46"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(7068),
+                            Email = "ElizabethWehner18@gmail.com",
+                            Name = "Elizabeth Wehner",
+                            Password = "u6nkOSP0j6"
+                        },
+                        new
+                        {
+                            ID = new Guid("22a458da-12df-4c80-bcf4-16aee6bd17e8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 32, DateTimeKind.Local).AddTicks(8991),
+                            Email = "TraceyEmard_OConner@yahoo.com",
+                            Name = "Tracey Emard",
+                            Password = "OHyQWSAb_9"
+                        },
+                        new
+                        {
+                            ID = new Guid("829d48b0-41b0-4781-9fe5-625c83102c56"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(2464),
+                            Email = "NealBahringer.Kohler@gmail.com",
+                            Name = "Neal Bahringer",
+                            Password = "i7_fKFg2jU"
+                        },
+                        new
+                        {
+                            ID = new Guid("e4e4b035-5c23-42a8-94f9-260b34b2020e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(3952),
+                            Email = "MelvinFahey.Beier@hotmail.com",
+                            Name = "Melvin Fahey",
+                            Password = "3pL_wGAnDx"
+                        },
+                        new
+                        {
+                            ID = new Guid("3d532113-fcd8-4966-b68b-bd8aabdeed92"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(5002),
+                            Email = "DustinWalker.Daniel@gmail.com",
+                            Name = "Dustin Walker",
+                            Password = "wlSc0V6h2Y"
+                        },
+                        new
+                        {
+                            ID = new Guid("9988395a-2537-490f-9836-c36fc30d049b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(6444),
+                            Email = "DaleRomaguera.Quigley14@yahoo.com",
+                            Name = "Dale Romaguera",
+                            Password = "LiRr_Opauy"
+                        },
+                        new
+                        {
+                            ID = new Guid("ae4178a6-b26f-499d-b876-aa85083b89fb"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(7475),
+                            Email = "DoreenShanahan25@hotmail.com",
+                            Name = "Doreen Shanahan",
+                            Password = "tyBVUahFY6"
+                        },
+                        new
+                        {
+                            ID = new Guid("f413a42f-d3e1-45bc-90db-421f8393c1fe"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(8329),
+                            Email = "MiguelSanford65@gmail.com",
+                            Name = "Miguel Sanford",
+                            Password = "X9JO_HWKjs"
+                        },
+                        new
+                        {
+                            ID = new Guid("7e0ade16-4ec1-4823-8c88-c243eb7b6c7d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 33, DateTimeKind.Local).AddTicks(9217),
+                            Email = "SaraGorczany_Kulas91@yahoo.com",
+                            Name = "Sara Gorczany",
+                            Password = "R_n6N1LXnR"
+                        },
+                        new
+                        {
+                            ID = new Guid("989cceb4-d7e9-41b2-8956-0a2c56de4031"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(70),
+                            Email = "ErinRatke85@yahoo.com",
+                            Name = "Erin Ratke",
+                            Password = "mQ8bJPG3UC"
+                        },
+                        new
+                        {
+                            ID = new Guid("693f2f3f-e85a-45a3-9662-c3207a3082a4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(872),
+                            Email = "JulioLemke_Schroeder@gmail.com",
+                            Name = "Julio Lemke",
+                            Password = "8A7S_mFgtn"
+                        },
+                        new
+                        {
+                            ID = new Guid("ff73d9ba-2e66-4142-90ad-ada7c457eb5e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(1701),
+                            Email = "KristiOkuneva_OConnell50@hotmail.com",
+                            Name = "Kristi Okuneva",
+                            Password = "g6_aXitQte"
+                        },
+                        new
+                        {
+                            ID = new Guid("afd7d8c4-e4dd-4db6-9f29-d4b76f9561ec"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(2568),
+                            Email = "RandolphWindler_Lowe@yahoo.com",
+                            Name = "Randolph Windler",
+                            Password = "GpdRD9ImAM"
+                        },
+                        new
+                        {
+                            ID = new Guid("9e489241-c767-430a-bf16-2010cde89386"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(3457),
+                            Email = "MeganKozey_Hyatt20@gmail.com",
+                            Name = "Megan Kozey",
+                            Password = "j4le1DJdW3"
+                        },
+                        new
+                        {
+                            ID = new Guid("7a59bbff-c2c2-4da3-a74e-11c9f9df37fa"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(4318),
+                            Email = "TomasBailey_Funk63@gmail.com",
+                            Name = "Tomas Bailey",
+                            Password = "WVjPUQnpmm"
+                        },
+                        new
+                        {
+                            ID = new Guid("d90f1872-bdc6-4c2b-b90a-d4da1cfaf4c0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(5181),
+                            Email = "ScottDavis.Keeling37@yahoo.com",
+                            Name = "Scott Davis",
+                            Password = "1XFUhk_afg"
+                        },
+                        new
+                        {
+                            ID = new Guid("877ac72f-c5f6-49c2-aa1b-7482d85dc090"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(6022),
+                            Email = "AndyDibbert.Smith@yahoo.com",
+                            Name = "Andy Dibbert",
+                            Password = "_HsQ4Ffa4Y"
+                        },
+                        new
+                        {
+                            ID = new Guid("e4c0dcf5-a2e0-4afe-a1d4-ac2c26d0f07d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(6904),
+                            Email = "PhilWatsica_Kunde@gmail.com",
+                            Name = "Phil Watsica",
+                            Password = "waeEjBwlmn"
+                        },
+                        new
+                        {
+                            ID = new Guid("f98fd5f4-d7c7-4769-8900-46e076c9dff8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(7672),
+                            Email = "JasonBoyle.Bashirian@yahoo.com",
+                            Name = "Jason Boyle",
+                            Password = "6GsJ52XPBn"
+                        },
+                        new
+                        {
+                            ID = new Guid("a55a4a6c-858a-4869-b904-e3c454912cd4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(8500),
+                            Email = "SalvatoreJast_Walter60@gmail.com",
+                            Name = "Salvatore Jast",
+                            Password = "LdYRb6BMqQ"
+                        },
+                        new
+                        {
+                            ID = new Guid("d9d3f3bd-18df-4cb1-b3aa-f720aa96a29b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 34, DateTimeKind.Local).AddTicks(9364),
+                            Email = "ErnestinePurdy52@yahoo.com",
+                            Name = "Ernestine Purdy",
+                            Password = "0KYn1wqXcq"
+                        },
+                        new
+                        {
+                            ID = new Guid("d8b56e16-3056-4569-802e-626ef1c0ade8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(205),
+                            Email = "JohnFay_Funk0@gmail.com",
+                            Name = "John Fay",
+                            Password = "ADoBiFTirC"
+                        },
+                        new
+                        {
+                            ID = new Guid("67ebd7a0-e312-4605-9af9-a8266cd9a1bd"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(1044),
+                            Email = "RomanKunze59@yahoo.com",
+                            Name = "Roman Kunze",
+                            Password = "xVpBl7wzXV"
+                        },
+                        new
+                        {
+                            ID = new Guid("7c6d31ec-6088-42d5-8a16-75559c3f2868"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(1846),
+                            Email = "MorrisFeil57@gmail.com",
+                            Name = "Morris Feil",
+                            Password = "Zdbckuht4m"
+                        },
+                        new
+                        {
+                            ID = new Guid("f01f3dad-287e-453c-8eea-1662671aa796"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(2721),
+                            Email = "JesseMonahan32@gmail.com",
+                            Name = "Jesse Monahan",
+                            Password = "wbMKdAprV3"
+                        },
+                        new
+                        {
+                            ID = new Guid("4c731bc6-fab7-4972-af73-66fc500607a3"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(3547),
+                            Email = "TashaSchneider.Smith69@yahoo.com",
+                            Name = "Tasha Schneider",
+                            Password = "GrbU011osV"
+                        },
+                        new
+                        {
+                            ID = new Guid("13df7bc3-b3ec-47d0-be22-5fe748235075"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(4409),
+                            Email = "HugoTurner.Hayes88@hotmail.com",
+                            Name = "Hugo Turner",
+                            Password = "VlLtQ2hJJv"
+                        },
+                        new
+                        {
+                            ID = new Guid("99e66afe-e20e-4717-994e-705daf8a2fbc"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(5210),
+                            Email = "KristenRogahn_Gutkowski67@gmail.com",
+                            Name = "Kristen Rogahn",
+                            Password = "OX5xAGt3Jc"
+                        },
+                        new
+                        {
+                            ID = new Guid("8b19ea37-03b7-47b0-8cee-018ccd7176d5"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(6041),
+                            Email = "TomOrn.Baumbach2@hotmail.com",
+                            Name = "Tom Orn",
+                            Password = "M8f3hhiYTI"
+                        },
+                        new
+                        {
+                            ID = new Guid("2a836d0c-522e-4ef2-b3f4-3a54a338056d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(6774),
+                            Email = "CalebLubowitz.Homenick8@gmail.com",
+                            Name = "Caleb Lubowitz",
+                            Password = "4cVvuc_GQU"
+                        },
+                        new
+                        {
+                            ID = new Guid("901facb2-e378-430d-95e1-7ed2527862f9"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(7559),
+                            Email = "JoFunk70@yahoo.com",
+                            Name = "Jo Funk",
+                            Password = "rK0f1EBD2w"
+                        },
+                        new
+                        {
+                            ID = new Guid("eb8a28fb-e7f8-4a9e-9d9f-14f91bb7ac40"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(8263),
+                            Email = "DiannaBrown64@gmail.com",
+                            Name = "Dianna Brown",
+                            Password = "4KrQWyclsU"
+                        },
+                        new
+                        {
+                            ID = new Guid("3be3db6a-0ae6-46c8-b684-942c332bdf8e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(9019),
+                            Email = "KarlaAbernathy0@yahoo.com",
+                            Name = "Karla Abernathy",
+                            Password = "SAEptw96du"
+                        },
+                        new
+                        {
+                            ID = new Guid("afb75d58-efae-43f6-8a96-980a020a475b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 35, DateTimeKind.Local).AddTicks(9745),
+                            Email = "MarionSchowalter.Hirthe@hotmail.com",
+                            Name = "Marion Schowalter",
+                            Password = "Z_y7yPJcCH"
+                        },
+                        new
+                        {
+                            ID = new Guid("7cbc8baf-d1c0-4f90-8e4c-5f730ea27d70"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(512),
+                            Email = "DixieHomenick42@gmail.com",
+                            Name = "Dixie Homenick",
+                            Password = "XYcJOHJTRA"
+                        },
+                        new
+                        {
+                            ID = new Guid("3d0d9822-3fff-47f0-bcaf-b5d9c2fa72ce"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(1289),
+                            Email = "AustinAdams.Beahan19@hotmail.com",
+                            Name = "Austin Adams",
+                            Password = "b6Ly9bpSVa"
+                        },
+                        new
+                        {
+                            ID = new Guid("a6bd392c-2948-4ea2-8bd8-ba163c90f99b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(2177),
+                            Email = "ThelmaRobel95@hotmail.com",
+                            Name = "Thelma Robel",
+                            Password = "Cw9Vrr5Cye"
+                        },
+                        new
+                        {
+                            ID = new Guid("12391b43-b602-4edb-9adb-cd4579dcbcde"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(3091),
+                            Email = "SimonCremin89@yahoo.com",
+                            Name = "Simon Cremin",
+                            Password = "wXuIX9YxlK"
+                        },
+                        new
+                        {
+                            ID = new Guid("53f26863-749d-481b-837c-fd475e594cd4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(3981),
+                            Email = "SheldonWalter44@gmail.com",
+                            Name = "Sheldon Walter",
+                            Password = "MRZNBhrmcu"
+                        },
+                        new
+                        {
+                            ID = new Guid("962fef06-b809-46a0-9705-3eae9dc268d6"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(4820),
+                            Email = "SidneyLeuschke90@yahoo.com",
+                            Name = "Sidney Leuschke",
+                            Password = "2EVVZsTqtW"
+                        },
+                        new
+                        {
+                            ID = new Guid("334c1d80-9cf9-47d9-bf0e-77d6902ebcf4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(5656),
+                            Email = "AltonBernier78@hotmail.com",
+                            Name = "Alton Bernier",
+                            Password = "nIxE5J1IS6"
+                        },
+                        new
+                        {
+                            ID = new Guid("a97784f6-7dc1-4f91-9fa8-6a2e2a49bb20"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(6483),
+                            Email = "JanisEbert97@gmail.com",
+                            Name = "Janis Ebert",
+                            Password = "59s90vn61V"
+                        },
+                        new
+                        {
+                            ID = new Guid("215d2ed3-ee94-49e8-af2a-1f2f9b11530a"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(7278),
+                            Email = "MichelleJohnston_Douglas@hotmail.com",
+                            Name = "Michelle Johnston",
+                            Password = "GJ6NPnxIo2"
+                        },
+                        new
+                        {
+                            ID = new Guid("df60b2ee-8fbf-42ab-9792-178e35fe91c4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(8164),
+                            Email = "HarrietMcGlynn.Pagac@gmail.com",
+                            Name = "Harriet McGlynn",
+                            Password = "FhFXFwA358"
+                        },
+                        new
+                        {
+                            ID = new Guid("fc344a3f-50ec-4b3f-a40e-d977aa65eb3f"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(9109),
+                            Email = "AngelinaOKeefe40@gmail.com",
+                            Name = "Angelina O'Keefe",
+                            Password = "BHfUPZX91H"
+                        },
+                        new
+                        {
+                            ID = new Guid("6b6fbcc2-4ecc-4acb-9811-e7a870f9b708"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 36, DateTimeKind.Local).AddTicks(9935),
+                            Email = "PedroBode_Watsica@yahoo.com",
+                            Name = "Pedro Bode",
+                            Password = "0O8FGQVl36"
+                        },
+                        new
+                        {
+                            ID = new Guid("1b5bc28f-c8fc-4b7e-ae28-2e4c887d4275"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(802),
+                            Email = "OmarSchaefer_Luettgen75@yahoo.com",
+                            Name = "Omar Schaefer",
+                            Password = "EQFa8lRam1"
+                        },
+                        new
+                        {
+                            ID = new Guid("01b371c0-d062-4254-a1af-b8f657fcbbfe"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(3536),
+                            Email = "GerardoNikolaus_Hand1@gmail.com",
+                            Name = "Gerardo Nikolaus",
+                            Password = "qwTA_zHicG"
+                        },
+                        new
+                        {
+                            ID = new Guid("04eca414-5770-4580-a541-e4a777d7a553"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(4645),
+                            Email = "AdaCrist.Abshire84@yahoo.com",
+                            Name = "Ada Crist",
+                            Password = "mFRMqRbnW2"
+                        },
+                        new
+                        {
+                            ID = new Guid("0710cb6f-f1e0-47ee-96ce-c41a740ca748"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(5546),
+                            Email = "MelanieWehner.Nikolaus39@hotmail.com",
+                            Name = "Melanie Wehner",
+                            Password = "d6Gxk83l32"
+                        },
+                        new
+                        {
+                            ID = new Guid("49347c8b-c9d0-4aec-ae4d-9b5e49712217"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(6492),
+                            Email = "ClayGleason_Kiehn26@yahoo.com",
+                            Name = "Clay Gleason",
+                            Password = "vwFvgGTeGX"
+                        },
+                        new
+                        {
+                            ID = new Guid("0e18966c-f0d5-4a40-9f88-c32f65538456"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(7366),
+                            Email = "JohnathanRippin38@hotmail.com",
+                            Name = "Johnathan Rippin",
+                            Password = "YoxLIWHPeJ"
+                        },
+                        new
+                        {
+                            ID = new Guid("9508757c-9cdd-4379-a1c2-a890c16e75f8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(8204),
+                            Email = "MikeHuel_Gislason62@gmail.com",
+                            Name = "Mike Huel",
+                            Password = "ypUiFhIVIW"
+                        },
+                        new
+                        {
+                            ID = new Guid("6417bbc7-d538-4092-94ef-6408dd0e3e23"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(9021),
+                            Email = "SamanthaHowell_Yost11@hotmail.com",
+                            Name = "Samantha Howell",
+                            Password = "MGUKZ9sE1U"
+                        },
+                        new
+                        {
+                            ID = new Guid("7b629ce9-df3b-408e-a781-582420662409"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 37, DateTimeKind.Local).AddTicks(9902),
+                            Email = "TomLegros_Jerde16@yahoo.com",
+                            Name = "Tom Legros",
+                            Password = "Ky2LmETICn"
+                        },
+                        new
+                        {
+                            ID = new Guid("4fa99b9b-3393-443d-8775-65034d0b6538"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(802),
+                            Email = "MattFeeney.Prosacco@yahoo.com",
+                            Name = "Matt Feeney",
+                            Password = "4dWVpviiFl"
+                        },
+                        new
+                        {
+                            ID = new Guid("d0a55314-0613-46a6-9f03-4d6d1e7528e2"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(2143),
+                            Email = "DixieLarson86@gmail.com",
+                            Name = "Dixie Larson",
+                            Password = "oQT6UUEo2w"
+                        },
+                        new
+                        {
+                            ID = new Guid("f01514c5-8193-4caf-b471-375b4a071201"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(2992),
+                            Email = "RitaConn.Harber@gmail.com",
+                            Name = "Rita Conn",
+                            Password = "UgA004H5xc"
+                        },
+                        new
+                        {
+                            ID = new Guid("31811c76-9a19-4024-8644-82c332adbf2e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(3835),
+                            Email = "BeatriceLind_Gerhold97@hotmail.com",
+                            Name = "Beatrice Lind",
+                            Password = "XUk5dBMonu"
+                        },
+                        new
+                        {
+                            ID = new Guid("0835c87b-b037-4b36-b431-a2f5ed8a951b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(4647),
+                            Email = "CesarHowell36@gmail.com",
+                            Name = "Cesar Howell",
+                            Password = "pdDN5pSTE1"
+                        },
+                        new
+                        {
+                            ID = new Guid("9fc7816c-0ad0-4b27-8c2f-35d66aa12f0e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(5461),
+                            Email = "GeraldineSmith_Hermiston@yahoo.com",
+                            Name = "Geraldine Smith",
+                            Password = "2prlEHPQd9"
+                        },
+                        new
+                        {
+                            ID = new Guid("42183835-6448-4488-b847-4b0cdb57336d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(6391),
+                            Email = "DianaHoppe_Lind75@yahoo.com",
+                            Name = "Diana Hoppe",
+                            Password = "5WMGM7k1h5"
+                        },
+                        new
+                        {
+                            ID = new Guid("155bad98-02bd-480e-9c26-1f93eec3f7cd"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(7235),
+                            Email = "ColinKling41@hotmail.com",
+                            Name = "Colin Kling",
+                            Password = "NwiwBBGvec"
+                        },
+                        new
+                        {
+                            ID = new Guid("2d1f36f7-0845-4ce2-a01a-bd7a63d6fc93"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(8044),
+                            Email = "JackFritsch_Rath@yahoo.com",
+                            Name = "Jack Fritsch",
+                            Password = "xSqXkW3a3b"
+                        },
+                        new
+                        {
+                            ID = new Guid("081e3e62-1656-43be-b300-4408d95205e4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 38, DateTimeKind.Local).AddTicks(8869),
+                            Email = "ClaraMertz18@gmail.com",
+                            Name = "Clara Mertz",
+                            Password = "fTWr6WaL2J"
+                        },
+                        new
+                        {
+                            ID = new Guid("006964ea-4715-4c68-8747-4a27b9d09cc8"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(599),
+                            Email = "NicholasBruen25@hotmail.com",
+                            Name = "Nicholas Bruen",
+                            Password = "XxtC2yxp4g"
+                        },
+                        new
+                        {
+                            ID = new Guid("cb83fd9b-eca5-4ed6-81df-2377bf14c15b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(1449),
+                            Email = "PennyKihn_Reynolds73@yahoo.com",
+                            Name = "Penny Kihn",
+                            Password = "Nfm_l4QbF1"
+                        },
+                        new
+                        {
+                            ID = new Guid("aa668f69-6962-4ccc-addd-c0756134470a"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(2291),
+                            Email = "HomerEffertz96@gmail.com",
+                            Name = "Homer Effertz",
+                            Password = "1gBPFcOLOq"
+                        },
+                        new
+                        {
+                            ID = new Guid("6538345b-fdf7-4881-92b1-850edcfdf071"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(3348),
+                            Email = "RyanOndricka7@gmail.com",
+                            Name = "Ryan Ondricka",
+                            Password = "eFaDSsiSyV"
+                        },
+                        new
+                        {
+                            ID = new Guid("ac1c0857-7d38-4774-a2e8-5c85c213c514"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(4238),
+                            Email = "GregoryPredovic15@gmail.com",
+                            Name = "Gregory Predovic",
+                            Password = "dwDPcHQU4I"
+                        },
+                        new
+                        {
+                            ID = new Guid("94a266a5-8eb4-4bc1-9bba-bab8f2bdcdb4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(5090),
+                            Email = "LuzSteuber.Reichel5@hotmail.com",
+                            Name = "Luz Steuber",
+                            Password = "IDgkeuNiDx"
+                        },
+                        new
+                        {
+                            ID = new Guid("bd8f32cf-23f6-435c-96ce-98fd05c011e4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(5930),
+                            Email = "LoriMaggio4@yahoo.com",
+                            Name = "Lori Maggio",
+                            Password = "qstV5A7nhM"
+                        },
+                        new
+                        {
+                            ID = new Guid("264f1a07-7776-4b0b-8076-71530f73743b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(6768),
+                            Email = "AdrianBogisich.Cronin@hotmail.com",
+                            Name = "Adrian Bogisich",
+                            Password = "lk3nae1VL3"
+                        },
+                        new
+                        {
+                            ID = new Guid("1c21b45b-1718-412d-9b4d-c1d3184ec9e0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(7681),
+                            Email = "HenriettaHills98@gmail.com",
+                            Name = "Henrietta Hills",
+                            Password = "xFOV3p70Dp"
+                        },
+                        new
+                        {
+                            ID = new Guid("f8305b9c-cdf3-4bad-bcf6-e47897993e7d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(8529),
+                            Email = "JustinDurgan_Wolf@yahoo.com",
+                            Name = "Justin Durgan",
+                            Password = "f07ehJME6W"
+                        },
+                        new
+                        {
+                            ID = new Guid("b718e0f7-b215-4c16-ad3d-006661a1f978"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 39, DateTimeKind.Local).AddTicks(9361),
+                            Email = "RooseveltRunte.OHara@hotmail.com",
+                            Name = "Roosevelt Runte",
+                            Password = "V4fuCWNo8v"
+                        },
+                        new
+                        {
+                            ID = new Guid("bd155a1d-264d-4ff8-b467-c9d0830b06c4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(233),
+                            Email = "CharleneSchaden10@hotmail.com",
+                            Name = "Charlene Schaden",
+                            Password = "o5Rou65tkw"
+                        },
+                        new
+                        {
+                            ID = new Guid("4afb9e48-0c65-4733-b7c7-6be41d0c2b05"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(1069),
+                            Email = "KatherineHarber_Hilll@hotmail.com",
+                            Name = "Katherine Harber",
+                            Password = "FJt3tV8ccu"
+                        },
+                        new
+                        {
+                            ID = new Guid("d05315be-189b-4384-9ad6-e1cd119a9c4f"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(1940),
+                            Email = "NadineSpinka.Johnson58@gmail.com",
+                            Name = "Nadine Spinka",
+                            Password = "hI9hDoCB0w"
+                        },
+                        new
+                        {
+                            ID = new Guid("847ae148-7a51-4535-9d8a-ef98aa1b87ee"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(2851),
+                            Email = "WesleyWaters_Ratke62@gmail.com",
+                            Name = "Wesley Waters",
+                            Password = "sHQtiT25Z5"
+                        },
+                        new
+                        {
+                            ID = new Guid("551c11ec-6a88-4787-b6b3-0251941e3543"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(3726),
+                            Email = "PamelaSmitham32@yahoo.com",
+                            Name = "Pamela Smitham",
+                            Password = "zhAuGAG46S"
+                        },
+                        new
+                        {
+                            ID = new Guid("5befe664-ea24-41dd-855c-b671552e2899"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(4568),
+                            Email = "NellieReichel_Reichel@gmail.com",
+                            Name = "Nellie Reichel",
+                            Password = "vH84GmC18A"
+                        },
+                        new
+                        {
+                            ID = new Guid("909ac67c-d653-4b82-aa13-00b4cc75a6db"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(5406),
+                            Email = "HermanBorer.Feeney79@hotmail.com",
+                            Name = "Herman Borer",
+                            Password = "NquzmtYk6a"
+                        },
+                        new
+                        {
+                            ID = new Guid("99c596df-c57b-486e-bd9f-dd8d9161c3ff"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(6215),
+                            Email = "ChadLang_Roob@gmail.com",
+                            Name = "Chad Lang",
+                            Password = "x9Pnflh638"
+                        },
+                        new
+                        {
+                            ID = new Guid("98c8639d-a297-4386-88ce-2b44f11c5293"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 40, DateTimeKind.Local).AddTicks(6934),
+                            Email = "JeremiahHermiston5@yahoo.com",
+                            Name = "Jeremiah Hermiston",
+                            Password = "3rP_eanXza"
+                        });
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Fluent_Validations.PaymentMethods", b =>
@@ -111,7 +1716,7 @@ namespace Bill_Payment_Management_Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BankAccountId")
+                    b.Property<Guid>("BankAccountsId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedDateTime")
@@ -131,7 +1736,7 @@ namespace Bill_Payment_Management_Migrations.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("BankAccountId")
+                    b.HasIndex("BankAccountsId")
                         .IsUnique();
 
                     b.HasIndex("CreditCardsId")
@@ -140,13 +1745,465 @@ namespace Bill_Payment_Management_Migrations.Migrations
                     b.HasIndex("CustomersId");
 
                     b.ToTable("PaymentMethods");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = new Guid("1f1dd62b-b3fd-47b1-b735-3b63481a9846"),
+                            BankAccountsId = new Guid("fb58d6ce-de1b-4b94-af6f-770f2f5f2bf0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(8379),
+                            CreditCardsId = new Guid("9170c036-eec3-4455-b2fc-2b7faed00085"),
+                            CustomersId = new Guid("01b371c0-d062-4254-a1af-b8f657fcbbfe"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("700421ce-d451-446a-b727-a60d23fc1cf3"),
+                            BankAccountsId = new Guid("34ef67ca-31bc-4660-bca6-b98cc82f2aa0"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(8946),
+                            CreditCardsId = new Guid("b53b5df8-78f0-437d-8da7-b6ae1a1e01b3"),
+                            CustomersId = new Guid("67ebd7a0-e312-4605-9af9-a8266cd9a1bd"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("e13ce82c-fc6e-4425-88f6-31fa999378cf"),
+                            BankAccountsId = new Guid("ccc929ea-deae-44e1-9e93-927354fece90"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(8970),
+                            CreditCardsId = new Guid("7a8f6a9e-8ee5-4f39-9c1f-51e937cf5ad4"),
+                            CustomersId = new Guid("d0a55314-0613-46a6-9f03-4d6d1e7528e2"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("0539577e-2a31-4e86-96a9-4fa4d0f75521"),
+                            BankAccountsId = new Guid("d0957b41-c3f3-4ab3-a673-37d7e42103ab"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(8987),
+                            CreditCardsId = new Guid("8d9965a7-60f8-4ee2-8477-4baff6af4f67"),
+                            CustomersId = new Guid("9e489241-c767-430a-bf16-2010cde89386"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("709e17c1-93cd-459b-92a5-69c79b95fff7"),
+                            BankAccountsId = new Guid("10028310-9315-4cf8-a40c-da97f9452e82"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9016),
+                            CreditCardsId = new Guid("18c24add-c346-4146-929b-bf50093aa68d"),
+                            CustomersId = new Guid("3be3db6a-0ae6-46c8-b684-942c332bdf8e"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("2581f554-64c8-4dc7-ba0e-ab4f63d6f8e0"),
+                            BankAccountsId = new Guid("8ecf635a-afee-41c7-807e-0cc63b2f8910"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9033),
+                            CreditCardsId = new Guid("2577e2dc-1019-456d-a988-c2667cf33897"),
+                            CustomersId = new Guid("3d0d9822-3fff-47f0-bcaf-b5d9c2fa72ce"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("4d16d972-9faa-45d2-9c4a-9b41ef8a8c3c"),
+                            BankAccountsId = new Guid("7f3a2b4f-5b38-4477-a896-c0114a7f76bf"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9050),
+                            CreditCardsId = new Guid("25c164ac-1a02-43fe-9cf0-51b49d19ab73"),
+                            CustomersId = new Guid("8c94f667-cd79-44e4-91ec-4f2bd3f43512"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("6bfe5898-8b6a-4220-a3b0-e69df1766726"),
+                            BankAccountsId = new Guid("c107a52a-87fc-4288-936c-6b3c35ccec3d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9066),
+                            CreditCardsId = new Guid("5fda03b0-ed87-4143-a977-e1132ad68ae2"),
+                            CustomersId = new Guid("e4c0dcf5-a2e0-4afe-a1d4-ac2c26d0f07d"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("1d1b80b0-0633-4811-bb68-7442bfa67587"),
+                            BankAccountsId = new Guid("559a9d3f-f784-4a52-9f5c-ee65321f99f1"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9083),
+                            CreditCardsId = new Guid("be2c5392-9746-48d2-aaae-0e2379df9959"),
+                            CustomersId = new Guid("f01f3dad-287e-453c-8eea-1662671aa796"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("28613717-8042-4b89-b749-40a79824a144"),
+                            BankAccountsId = new Guid("60ed2325-d53d-4209-8bb5-0ec780ac4015"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9098),
+                            CreditCardsId = new Guid("708d5a36-c282-4ef8-a7b6-c093853b2a20"),
+                            CustomersId = new Guid("aa668f69-6962-4ccc-addd-c0756134470a"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("9ae3c5e6-1736-4fa5-bd4a-7736fd3f3518"),
+                            BankAccountsId = new Guid("a3fc4852-77ee-4c02-9282-e8454007af4e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9114),
+                            CreditCardsId = new Guid("aea72de0-69c7-4e9b-85d2-a267e886a38f"),
+                            CustomersId = new Guid("c197c7cc-ccdf-473d-9245-65111b4e76b5"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("3c0fd05a-c84b-4cfc-afa8-af312c060aa8"),
+                            BankAccountsId = new Guid("e1afd01e-b09c-49fa-8851-50a7142ae31e"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9131),
+                            CreditCardsId = new Guid("27a8fedd-01d0-4d15-bb4d-6c778f034e0e"),
+                            CustomersId = new Guid("7c6d31ec-6088-42d5-8a16-75559c3f2868"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("6e208da3-c8bf-4773-9550-20ad0c4cb6dd"),
+                            BankAccountsId = new Guid("0c5a707c-800d-4a5d-b718-307ca094804b"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9149),
+                            CreditCardsId = new Guid("c104a6c9-7861-4877-9b8e-451336c8e314"),
+                            CustomersId = new Guid("0710cb6f-f1e0-47ee-96ce-c41a740ca748"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("910172c5-6380-4b92-8f2a-e07efe1a2ab2"),
+                            BankAccountsId = new Guid("ae496530-6dea-4890-98b9-b23858bc9847"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9166),
+                            CreditCardsId = new Guid("7689c824-7f87-4be7-a05b-6b33787d8389"),
+                            CustomersId = new Guid("afd7d8c4-e4dd-4db6-9f29-d4b76f9561ec"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("51280e68-485f-4c69-b192-0e06b8320006"),
+                            BankAccountsId = new Guid("47837055-95c6-4123-b2cf-024f29365fb6"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9181),
+                            CreditCardsId = new Guid("2a47b215-8198-42b6-b085-072336c2f407"),
+                            CustomersId = new Guid("ae4178a6-b26f-499d-b876-aa85083b89fb"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("f46c7185-5e87-41fa-b07d-25a56e727ad5"),
+                            BankAccountsId = new Guid("a4962071-9195-4411-ba06-c24f0d9ea0fd"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9198),
+                            CreditCardsId = new Guid("26a8fb2a-9f8c-433f-af73-b5af325974c8"),
+                            CustomersId = new Guid("d90f1872-bdc6-4c2b-b90a-d4da1cfaf4c0"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("c9244e20-586e-421f-bcde-7a3a516ab22b"),
+                            BankAccountsId = new Guid("6d9dcd2e-cb8c-4a42-a0a5-4e7225995cd1"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9214),
+                            CreditCardsId = new Guid("d0a4fdf1-8d57-4f82-b1ec-4fb058a2337e"),
+                            CustomersId = new Guid("9988395a-2537-490f-9836-c36fc30d049b"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("acbfdb2b-7ae8-493e-95aa-8c24c8577c1d"),
+                            BankAccountsId = new Guid("3c6b89f0-aeb3-48fa-91b2-d6a0166728de"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9229),
+                            CreditCardsId = new Guid("9f34352f-32f0-4ddc-8351-04e05fada5ac"),
+                            CustomersId = new Guid("9988395a-2537-490f-9836-c36fc30d049b"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("bd3f8452-c9c3-4ae2-aa65-ad8cb98127f5"),
+                            BankAccountsId = new Guid("ca1cdef6-280d-4336-ac27-3e7d3a1f7519"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9244),
+                            CreditCardsId = new Guid("8bce849c-5398-4730-807f-c893fea3c844"),
+                            CustomersId = new Guid("3d0d9822-3fff-47f0-bcaf-b5d9c2fa72ce"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("1e926b8d-17c6-4c67-bf44-413ecea7830f"),
+                            BankAccountsId = new Guid("c97e6f4a-8577-42a1-9429-0cd874d90347"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9258),
+                            CreditCardsId = new Guid("76e0e0c1-ff92-4350-a120-ee250ba9e3f0"),
+                            CustomersId = new Guid("264f1a07-7776-4b0b-8076-71530f73743b"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("e7bb1063-33b9-4624-b1a4-b27cf702dd45"),
+                            BankAccountsId = new Guid("5ff0b966-b1de-4924-a3cc-1c4babb1e6fc"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9276),
+                            CreditCardsId = new Guid("95c3c876-3155-4d67-a754-0a08c5fb2da8"),
+                            CustomersId = new Guid("d1a41a10-0ea0-41f7-bdd6-2c59960d33c5"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("5605e1bb-2b54-4f6b-9eb1-cfc051f51787"),
+                            BankAccountsId = new Guid("2a38d95c-2890-41e8-9c40-b694d52c1e25"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9293),
+                            CreditCardsId = new Guid("8c35ffbd-60bd-4e32-8343-502f7f6a891b"),
+                            CustomersId = new Guid("877ac72f-c5f6-49c2-aa1b-7482d85dc090"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("7fd9e3b3-181d-4a27-9ea5-2aaced80647f"),
+                            BankAccountsId = new Guid("d0b37139-06e9-4311-a7cc-361394d2e1c3"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9308),
+                            CreditCardsId = new Guid("02ae29c4-51eb-4d97-ba5a-517f5847ce64"),
+                            CustomersId = new Guid("c3d499f4-6176-48ca-8aba-19069ca76c57"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("41eda6c3-b5e4-45ff-9962-28919b6a951d"),
+                            BankAccountsId = new Guid("9c0c018a-ee7b-4265-a4f3-9e13212cc3df"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9359),
+                            CreditCardsId = new Guid("0c63bfc6-9546-4d7b-9ec4-e97c80cb3b8d"),
+                            CustomersId = new Guid("1c21b45b-1718-412d-9b4d-c1d3184ec9e0"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("254ccdfb-71b1-4e67-8a20-7845156f606f"),
+                            BankAccountsId = new Guid("2631a0bb-a502-45ec-ab65-d7a7e733342a"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9375),
+                            CreditCardsId = new Guid("8f94fec3-a3e1-42ad-8a52-182b90e85231"),
+                            CustomersId = new Guid("22a458da-12df-4c80-bcf4-16aee6bd17e8"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("67d865ae-2c5b-44cd-ae34-8e1f397c9c90"),
+                            BankAccountsId = new Guid("7e5f3541-f074-458a-9570-92d2eb9ee1d2"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9394),
+                            CreditCardsId = new Guid("f32ec43b-0951-4a59-bc44-c679a3d7fe33"),
+                            CustomersId = new Guid("334c1d80-9cf9-47d9-bf0e-77d6902ebcf4"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("23fc53b1-ca77-4443-8cfa-c7e2d26e6728"),
+                            BankAccountsId = new Guid("05c130d0-696e-4e29-a43a-0b59874cbc45"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9410),
+                            CreditCardsId = new Guid("23790e45-94ae-49e7-8b15-5eae043967d0"),
+                            CustomersId = new Guid("94a266a5-8eb4-4bc1-9bba-bab8f2bdcdb4"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("4a8876d3-bc42-4ca0-8142-64ebeaf01059"),
+                            BankAccountsId = new Guid("e68a042c-566a-4272-bf72-7f5ba7956600"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9427),
+                            CreditCardsId = new Guid("01c0ff7c-6450-4103-8a26-2221b7064475"),
+                            CustomersId = new Guid("3d0d9822-3fff-47f0-bcaf-b5d9c2fa72ce"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("63050db6-28ed-451d-b325-a31ff3661e85"),
+                            BankAccountsId = new Guid("058286f1-0323-4b7d-81fc-768e804697f3"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9443),
+                            CreditCardsId = new Guid("b1d696e0-2d72-4d15-934e-a5d64e0cc5be"),
+                            CustomersId = new Guid("94a266a5-8eb4-4bc1-9bba-bab8f2bdcdb4"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("5a530665-9055-43d9-a3dd-6fab588fa4dd"),
+                            BankAccountsId = new Guid("75f225e3-5164-4385-b89c-cc91b8b86e17"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9457),
+                            CreditCardsId = new Guid("1d3490ca-7731-451c-8b7c-a5cf0eeb2b70"),
+                            CustomersId = new Guid("264f1a07-7776-4b0b-8076-71530f73743b"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("e6e07ae2-58d3-4d2d-86d4-1cf644b00bc7"),
+                            BankAccountsId = new Guid("c79e6a74-6378-41a0-80cd-ab1dc6bb1863"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9472),
+                            CreditCardsId = new Guid("dd677cd0-2dee-4f46-8771-37109299c4c5"),
+                            CustomersId = new Guid("2a836d0c-522e-4ef2-b3f4-3a54a338056d"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("a11e4604-0ec0-4221-ab33-b49b9f4a101d"),
+                            BankAccountsId = new Guid("e4d17015-21cc-44b1-b1a5-ae0cfffa1e46"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9488),
+                            CreditCardsId = new Guid("73d61520-7175-4438-a6ca-31cdcce70d7d"),
+                            CustomersId = new Guid("67ebd7a0-e312-4605-9af9-a8266cd9a1bd"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("8dfca02a-40b6-4732-bc37-5599671c223a"),
+                            BankAccountsId = new Guid("9bf798ee-af41-414b-923a-c424d44069d1"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9502),
+                            CreditCardsId = new Guid("faf697cb-f482-4b74-820e-9b5541539dae"),
+                            CustomersId = new Guid("4fa99b9b-3393-443d-8775-65034d0b6538"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("31f97f6e-e027-48dd-8b5d-b9366b3da69b"),
+                            BankAccountsId = new Guid("66c7bef5-cafc-45d2-a071-0a60f12df003"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9518),
+                            CreditCardsId = new Guid("644a011f-c242-4762-a14e-7cef84e6e755"),
+                            CustomersId = new Guid("b718e0f7-b215-4c16-ad3d-006661a1f978"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("eebf89dd-36ad-467d-a1c4-91e727652a86"),
+                            BankAccountsId = new Guid("3788b397-6f56-49ed-ba41-9d86e6044f3a"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9534),
+                            CreditCardsId = new Guid("e6e9acb9-b7a1-4b63-8288-c849b75a653d"),
+                            CustomersId = new Guid("c3d499f4-6176-48ca-8aba-19069ca76c57"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("33686a87-2d35-4973-ba10-413c00f65aa9"),
+                            BankAccountsId = new Guid("863f3e06-84a0-44c0-b7dd-0c3cebc6a4e2"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9548),
+                            CreditCardsId = new Guid("5e7bf9a6-ba09-4d87-bb6a-1c6c7645ce7f"),
+                            CustomersId = new Guid("334c1d80-9cf9-47d9-bf0e-77d6902ebcf4"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("44d5610e-58ec-46d8-8aff-c09efc85a5bd"),
+                            BankAccountsId = new Guid("bf002f3e-db7d-45a5-9506-d1d969efb5ea"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9564),
+                            CreditCardsId = new Guid("d9fd9836-6c29-43ce-a0b7-c2a760ae8132"),
+                            CustomersId = new Guid("2b243319-77dd-4557-bb18-adf96d098264"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("06a27f92-a245-4743-9c40-5d96a615f9cc"),
+                            BankAccountsId = new Guid("655cd521-5a6f-4e3c-92e6-34f7d5a36369"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9580),
+                            CreditCardsId = new Guid("e235f647-fd17-4b6b-a08b-e04a7a09b188"),
+                            CustomersId = new Guid("2b243319-77dd-4557-bb18-adf96d098264"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("9c90b3d4-c8c9-4906-93d9-c16024826800"),
+                            BankAccountsId = new Guid("c25b8910-5bfd-4a20-856d-5bc6d4418c32"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9594),
+                            CreditCardsId = new Guid("5a559d5c-942d-49d8-a2f4-a056e5396b8e"),
+                            CustomersId = new Guid("215d2ed3-ee94-49e8-af2a-1f2f9b11530a"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("ab79854f-1d58-453e-9cca-513bd3142ac4"),
+                            BankAccountsId = new Guid("a816f455-f011-4c17-9304-d4d50cb642f4"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9610),
+                            CreditCardsId = new Guid("50a1a9d1-667b-4c0a-a108-7686758da3d8"),
+                            CustomersId = new Guid("bc05ced6-1992-4c92-be2c-675fe596b4b9"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("de84cb0c-bbcd-4ce1-a4f7-b951ba61108f"),
+                            BankAccountsId = new Guid("90f0b1e0-2bdb-46b7-8a59-de196ff1c90c"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9626),
+                            CreditCardsId = new Guid("ffca64e0-883a-4348-a8b0-82cc1cc54fcb"),
+                            CustomersId = new Guid("f01514c5-8193-4caf-b471-375b4a071201"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("93feefe5-61df-4b40-8ffe-d75939854e9e"),
+                            BankAccountsId = new Guid("ea211b90-13e1-4b4f-a2fa-d8b3b49a7011"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9642),
+                            CreditCardsId = new Guid("0d1f9c6e-d3cb-4e14-8d46-7cb217241467"),
+                            CustomersId = new Guid("54f1a5d8-9b37-470a-889f-d8691a095ab5"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("02adc07f-79d1-4b9a-9e09-044729a272e1"),
+                            BankAccountsId = new Guid("f5cf0326-9cf2-462f-b8e8-71406145e4d7"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9657),
+                            CreditCardsId = new Guid("c3b40105-4b51-48c1-8881-9468f13f5792"),
+                            CustomersId = new Guid("215d2ed3-ee94-49e8-af2a-1f2f9b11530a"),
+                            PaymentTypes = 0
+                        },
+                        new
+                        {
+                            ID = new Guid("3b63a9c7-c4cd-4bc9-a608-3cebb4bc8fbc"),
+                            BankAccountsId = new Guid("698cd106-c76c-4722-a245-4181d07013ba"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9672),
+                            CreditCardsId = new Guid("ff21d401-13a7-44b3-8fa2-620644a770d1"),
+                            CustomersId = new Guid("afb75d58-efae-43f6-8a96-980a020a475b"),
+                            PaymentTypes = 5
+                        },
+                        new
+                        {
+                            ID = new Guid("3c654bb0-e435-40c9-9c3c-0acb78311c84"),
+                            BankAccountsId = new Guid("172a9dae-446a-4adc-a608-5a3716514bf9"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9689),
+                            CreditCardsId = new Guid("053e6297-8484-473d-90d1-fec08ddb1c3c"),
+                            CustomersId = new Guid("12391b43-b602-4edb-9adb-cd4579dcbcde"),
+                            PaymentTypes = 3
+                        },
+                        new
+                        {
+                            ID = new Guid("d1d8180b-e1ff-4f79-8633-5fcf27e4edc1"),
+                            BankAccountsId = new Guid("35b7b17f-19e5-4400-bf8a-bc3dae464db1"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9705),
+                            CreditCardsId = new Guid("c9f98697-8bda-415b-ade0-efd60f9e423c"),
+                            CustomersId = new Guid("7cbc8baf-d1c0-4f90-8e4c-5f730ea27d70"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("907f55b8-25d3-4ad4-a682-4676dc9567f6"),
+                            BankAccountsId = new Guid("55f4d148-a232-4e1e-a652-9c6fa0af824d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9721),
+                            CreditCardsId = new Guid("fb295fda-511a-4e60-b19c-d0fd2117c4b0"),
+                            CustomersId = new Guid("42183835-6448-4488-b847-4b0cdb57336d"),
+                            PaymentTypes = 4
+                        },
+                        new
+                        {
+                            ID = new Guid("8b8db2ac-2a11-49ec-89e6-620713550a19"),
+                            BankAccountsId = new Guid("8d4349fa-a4c9-4a82-92bc-361d2726167c"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9738),
+                            CreditCardsId = new Guid("c2b622de-18b6-49cb-9cdb-af6e17ffaecd"),
+                            CustomersId = new Guid("829d48b0-41b0-4781-9fe5-625c83102c56"),
+                            PaymentTypes = 1
+                        },
+                        new
+                        {
+                            ID = new Guid("7b28ef34-e9dc-451b-9b59-f0ce8a31e148"),
+                            BankAccountsId = new Guid("d807cfc9-9852-4d38-b291-4c09727a341d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9754),
+                            CreditCardsId = new Guid("a2c9d1c4-3fad-4282-a0c8-e0d81b81e50f"),
+                            CustomersId = new Guid("94693528-e169-431f-b435-44796efbb170"),
+                            PaymentTypes = 2
+                        },
+                        new
+                        {
+                            ID = new Guid("8d193936-c974-4af8-ba7a-d5da234910af"),
+                            BankAccountsId = new Guid("16bfba5d-8d48-47d4-8a21-a911000f515d"),
+                            CreatedDateTime = new DateTime(2023, 5, 11, 10, 3, 42, 48, DateTimeKind.Local).AddTicks(9769),
+                            CreditCardsId = new Guid("929d48ab-9b9d-4229-800e-2e42084c87f0"),
+                            CustomersId = new Guid("c3d499f4-6176-48ca-8aba-19069ca76c57"),
+                            PaymentTypes = 5
+                        });
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Fluent_Validations.PaymentMethods", b =>
                 {
                     b.HasOne("Bill_Payment_System_DAL.Entities.BankAccounts", "BankAccounts")
                         .WithOne("PaymentMethods")
-                        .HasForeignKey("Bill_Payment_System_DAL.Fluent_Validations.PaymentMethods", "BankAccountId")
+                        .HasForeignKey("Bill_Payment_System_DAL.Fluent_Validations.PaymentMethods", "BankAccountsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -170,14 +2227,12 @@ namespace Bill_Payment_Management_Migrations.Migrations
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Entities.BankAccounts", b =>
                 {
-                    b.Navigation("PaymentMethods")
-                        .IsRequired();
+                    b.Navigation("PaymentMethods");
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Entities.CreditCards", b =>
                 {
-                    b.Navigation("PaymentMethods")
-                        .IsRequired();
+                    b.Navigation("PaymentMethods");
                 });
 
             modelBuilder.Entity("Bill_Payment_System_DAL.Entities.Customers", b =>
