@@ -29,4 +29,7 @@ We welcome contributions from the community to improve the Bill Payments Applica
 
 4. Submit a pull request, clearly describing the changes you've made and their purpose.
 
-[[Click here to download the PDF file]]()
+## Download file
+[Click here to download the PDF file](https://github.com/TkachYevhenii2303/Bill_Payment_Management_System/blob/main/Advanced-Relations.pdf)
+
+![Image](Database.png)
